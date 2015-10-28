@@ -1,7 +1,7 @@
 # CliWe
 A simple command line interface wrapper for your Java console application.
 
-# Usage
+## Usage
 The main method of the console application will look like this:
 
 ```Java
@@ -17,4 +17,19 @@ public static void main(String[] args) {
 				}
 			});
 	}
+```
+
+Running your application without arguments will produce the following output:
+
+```
+usage: my_program_name [-f] [-h] [-o <ARG>] -r <ARG>
+
+ERROR: Missing required option: r
+
+
+  -f,--flag                   this is a flag!
+  -h,--help                   print this help
+  -o,--other-option <ARG>     option not mandatory with a default value set (default value: VALUE)
+  -r,--required-option <ARG>  a required option.
+
 ```
